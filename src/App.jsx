@@ -1,33 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-
-import './App.css'
+import "./App.css";
+import Hero from "./sections/Hero/Hero.jsx";
+import Projects from "./sections/Projects/Projects.jsx";
+import Skills from "./sections/Skills/Skills.jsx";
+import Contact from "./sections/Contact/Contact.jsx";
+import Footer from "./sections/Footer/Footer.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-       
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Hero></Hero>
+      <Projects></Projects>
+      <Skills></Skills>
+      <Contact></Contact>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
