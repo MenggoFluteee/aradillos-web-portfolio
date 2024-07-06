@@ -1,3 +1,5 @@
+import React from "react";
+
 import styles from "./ProjectsStyles.module.css";
 
 import bdmslogo from "../../assets/bdmslogo.png";
@@ -12,21 +14,22 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          link="https://facebook.com"
+          link="/aradillos-web-portfolio/cmubdms/"
           altText="CMU | BDMS"
           logo={bdmslogo}
           title="CMU | BDMS"
           description="Information System"
         ></ProjectCard>
+
         <ProjectCard
-          link="https://facebook.com"
+          link="/aradillos-web-portfolio/cmusoms/"
           altText="CMU | SOMS"
           logo={osaslogo}
           title="CMU | SOMS"
           description="Information System"
         ></ProjectCard>
         <ProjectCard
-          link="https://facebook.com"
+          link="/aradillos-web-portfolio/cmunity/"
           altText="CMUnity"
           logo={cmunitylogo}
           title="CMUnity"

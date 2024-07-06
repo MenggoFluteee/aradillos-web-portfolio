@@ -19,7 +19,13 @@
       margin: 0;
 
       img {
-        width: 30px;
+        width: 50px;
+        transition: 0.3s;
+      }
+
+      img:hover {
+        width: 55px;
+        transition: 0.3s;
       }
     }
   }
@@ -27,6 +33,14 @@
   a {
     width: fit-content;
     align-self: center;
+  }
+
+  .fullname {
+    color: var(--title-color);
+  }
+
+  .lastname {
+    font-size: 64px;
   }
 
   button {

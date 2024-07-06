@@ -1,23 +1,27 @@
 :root {
   --background-color: #f2f2f2;
   --gradient-color: #fff;
-  --btn-color: #0987f2;
+  --btn-color: #02681e;
   --btn-text-color: #f2f2f2;
   --project-card-bg: #ffffff00;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --navbar-bg-color: #e4e4e4;
+  --title-color: #00461e;
 }
 
 [data-theme="dark"] {
   --background-color: #222;
   --gradient-color: black;
-  --btn-color: #f2f2f2;
+  --btn-color: #ffc600;
   --btn-text-color: #222;
   --project-card-bg: #f2f2f2;
   --text-color: #f2f2f2;
   --form-text-color: #f2f2f2;
   --footer-text-color: #bbb;
+  --navbar-bg-color: rgb(25, 25, 25);
+  --title-color: #ffc600;
 }
 
 body {
@@ -30,7 +34,6 @@ body {
 #root {
   display: flex;
   flex-direction: column;
-  gap: 60px;
   width: 100%; /* Ensure #root takes full width */
 }
 
@@ -71,6 +74,7 @@ p {
 
 .sectionTitle {
   margin-bottom: 30px;
+  color: var(--title-color);
 }
 
 .hover {
