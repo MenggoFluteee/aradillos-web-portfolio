@@ -9,15 +9,6 @@
   }
 }
 
-.skillList {
-  display: flex;
-  justify-content: space-evenly;
-  align-self: center;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  max-width: 100ch;
-}
-
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -39,10 +30,8 @@
 .logos:after {
   position: absolute;
   top: 0;
-
   width: 250px;
   height: 100%;
-
   content: "";
   z-index: 2;
 }
@@ -71,11 +60,46 @@
 
 .logosSlide {
   display: inline-block;
-
   animation: 15s slide infinite linear;
-
   img {
     height: 150px;
     margin: 0 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  #root {
+    gap: 100px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #root {
+    gap: 200px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 75px;
   }
 }
